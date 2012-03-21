@@ -14,10 +14,13 @@ nnoremap <silent> <Leader>] :tabnext<CR>
 " JSON files are javascript
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
-"fuzzy search
+" enable mouse for fast gestural scrolling
+set mouse=a
+
+" fuzzy search
 nnoremap <C-f><C-f> :FufFile<CR>
 
-"ctags stuff
+" ctags stuff
 nnoremap <silent> <F9> :TagbarToggle<CR>
 
 let g:syntastic_javascript_checker='jshint'
