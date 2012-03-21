@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/bryn/projects/hnet'
+let g:netrw_dirhist_2='/usr/local/lib/node_modules'
+let g:netrw_dirhist_3='/Users/bryn/projects/node-modules/Canarsie'
+let g:netrw_dirhist_4='/Users/bryn/.vim/bundle/mustache.vim'
+let g:netrw_dirhist_5='/Users/bryn/projects/atdaa/sites/all/modules/user/aetta_customforms'
+let g:netrw_dirhist_6='/Users/bryn/projects/atdaa/sites/all/modules/contrib/content_taxonomy'
+let g:netrw_dirhist_7='/Users/bryn/projects/node-modules/connect-badass-messages'
