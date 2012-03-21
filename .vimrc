@@ -55,8 +55,9 @@ nmap <silent> <Leader>p :NERDTreeToggle<CR>
 "autopen NERDTree and focus cursor in new document  
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p  
-let NERDTreeShowHidden=1  
-
+let NERDTreeShowHidden=1
+let NERDTreeDirArrows=1
+let NERDTreeMinimalUI=1
 
 
 "Show line number
