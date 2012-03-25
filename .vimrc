@@ -7,6 +7,11 @@ set filetype=on
 filetype plugin on
 filetype indent on
 
+" Large paste helper
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
 " Tab stuff
 nnoremap <silent> <Leader>[ :tabprevious<CR>
 nnoremap <silent> <Leader>] :tabnext<CR>
