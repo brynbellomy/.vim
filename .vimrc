@@ -63,6 +63,8 @@ autocmd VimEnter * wincmd p
 let NERDTreeShowHidden=1
 let NERDTreeDirArrows=1
 let NERDTreeMinimalUI=1
+" this will make nerdtree disappear when the last buffer is gone
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 
 "Show line number
