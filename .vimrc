@@ -99,6 +99,11 @@ set showcmd
 set backspace=indent,eol,start
 set noswapfile
 
+" tabwidth/wrapping defaults (based on HTML filetype's setting)
+set sw=2
+set ts=2
+set sts=2
+set textwidth=0
 
 " HTML (tab width 2 chr, no wrapping)
 autocmd FileType html set sw=2
@@ -137,6 +142,11 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 autocmd FileType handlebars set textwidth=0
+
+
+" coffeescript auto-compile
+au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
+
 
 " Highlight 81 column
 set colorcolumn=81
