@@ -3,9 +3,11 @@ call pathogen#infect()
 colorscheme lucius
 
 "Filetype
-set filetype=on
+"set filetype=on
 filetype plugin on
 filetype indent on
+
+syntax enable
 
 " Large paste helper
 nnoremap <F2> :set invpaste paste?<CR>
@@ -145,6 +147,5 @@ let g:ctrlp_working_path_mode = 2
 
 autocmd FileType javascript set dictionary-=~/.vim/bundle/vim-node/dict/node.dict dictionary+=~/.vim/bundle/vim-node/dict/node.dict
 
-syntax on
 
 set foldmethod=syntax
