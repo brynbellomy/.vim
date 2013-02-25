@@ -4,12 +4,12 @@ set guioptions=egmrLt
 set guifont=Consolas:h16
 
 "Filetype
-set filetype=on
+"set filetype=on
 filetype plugin on
 filetype indent on
 
-
 colorscheme lucius
+syntax enable
 
 " Large paste helper
 nnoremap <F2> :set invpaste paste?<CR>
@@ -77,7 +77,7 @@ set wildignore+=*.DS_Store                       " OSX bullshit
 
 set wildignore+=*.luac                           " Lua byte code
 set wildignore+=*.node                           " Node.js native modules
-set wildignore+=*.pyc 
+set wildignore+=*.pyc
 
 
 "Show line number
@@ -189,7 +189,6 @@ let g:ctrlp_working_path_mode = 2
 
 autocmd FileType javascript set dictionary-=/Users/bryn/.vim/bundle/vim-node/dict/node.dict dictionary+=~/.vim/bundle/vim-node/dict/node.dict
 
-syntax on
 
 set foldmethod=syntax
 
@@ -207,9 +206,9 @@ command! Untab :%s/\t/    /g
 
 "Map NERDTree file browser to \p
 map <silent> <Leader>p :NERDTreeToggle<CR>
-" autopen NERDTree and focus cursor in new document  
+" autopen NERDTree and focus cursor in new document
 "autocmd vimenter * NERDTree
-"autocmd VimEnter * wincmd p  
+"autocmd VimEnter * wincmd p
 let NERDTreeShowHidden=1
 let NERDTreeDirArrows=1
 let NERDTreeMinimalUI=1
