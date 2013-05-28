@@ -8,7 +8,7 @@ set guifont=Consolas:h16
 filetype plugin on
 filetype indent on
 
-colorscheme lucius
+colorscheme spacedust
 syntax enable
 
 " Large paste helper
